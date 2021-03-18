@@ -1,4 +1,12 @@
-.formControl{
-    width: 30%;
-    margin-bottom: 30px !important;
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+
+.formControl {
+  width: 30%;
+  font-family: Ropa Sans;
+  margin-bottom: 30px !important;
+  color: rgb(44, 44, 44);
+}
+.formControl select {
+  font-family: Ropa Sans;
+  color: rgb(44, 44, 44);
 }

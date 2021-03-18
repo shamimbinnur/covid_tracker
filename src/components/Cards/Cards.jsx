@@ -2,7 +2,6 @@ import React from 'react';
 import {Card, CardContent, Typography, Grid} from '@material-ui/core';
 import styles from './Cards.module.css';
 import CountUp from 'react-countup';
-import cx from 'classnames';
 
 const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
     if(!confirmed){
@@ -11,7 +10,41 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
     
     return(
        <div className= {styles.container}>
-           <Grid container spacing ={3} justify ="center">
+           <div className={styles.last_update}>
+           { new Date(lastUpdate).toDateString()}
+           </div>
+
+           <div className={styles.cards}>
+               <div>
+                    <div className={styles.deaths}>
+                        <CountUp start={1234} end={deaths.value} duration={1.0} />    
+                    </div>
+                    <div className={styles.deaths_title}>
+                        Deaths
+                    </div>
+               </div>
+               
+                <div>
+                    <div className={styles.confirmed}>
+                        <CountUp start={1234} end={confirmed.value} duration={1.0} />
+                    </div>
+                    <div className={styles.confirmed_title}>
+                        Confirmed
+                    </div>
+                </div>
+               
+               <div>
+                    <div className={styles.recovered}>
+                        <CountUp start={1234} end={recovered.value} duration={1.0} />
+                    </div>
+                    <div className={styles.recovered_title}>
+                        Recovered
+                    </div>
+               </div>
+               
+           </div>
+
+           {/* <Grid container spacing ={3} justify ="center">
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
                     <CardContent>
                         <Typography color = "textSecondary" >Confirmed</Typography>
@@ -45,7 +78,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
                     </CardContent>
 
                 </Grid>
-           </Grid>
+           </Grid> */}
        </div>
     )
 }

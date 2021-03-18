@@ -1,4 +1,4 @@
-.container {
+/* .container {
     margin: 50px 0;
 }
 .card{
@@ -18,4 +18,89 @@
     .card{
         margin: 2% 0 !important;
     }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+
+.cards {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.deaths {
+  width: 160px;
+  height: 100px;
+  background: #ec5656;
+  border: 2px solid #ffb7b7;
+  box-sizing: border-box;
+  border-radius: 5%;
+
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recovered {
+  width: 160px;
+  height: 100px;
+  background: #53df69;
+  border: 2px solid #b7ffc2;
+  box-sizing: border-box;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+.confirmed {
+  width: 160px;
+  height: 100px;
+  background: #4686e6;
+  border: 2px solid #bfd8ff;
+  margin: 0 10px 0 10px;
+  box-sizing: border-box;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+
+.recovered_title {
+  color: rgb(78, 78, 78);
+  text-align: center;
+  margin: 10px;
+}
+.deaths_title {
+  color: rgb(78, 78, 78);
+  text-align: center;
+  margin: 10px;
+}
+.confirmed_title {
+  color: rgb(78, 78, 78);
+  text-align: center;
+  margin: 10px;
+}
+.last_update {
+  text-align: center;
+  font-size: 18px;
 }

@@ -1,24 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+
 body {
-    background-color: rgb(250,250,250)
+  background-color: #fffced;
+  font-family: Ropa Sans;
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+.title h1 {
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 107px;
 
-.image{
-    width: 370px;
-    margin-top: 50px;
+  color: #474646;
 }
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
 
-@media (max-width: 770px){
-    .container{
-        margin: 0 10%;
-    }
-
-    .image{
-        width: 100%;
-    }
+  .image {
+    width: 100%;
+  }
 }
